@@ -24,7 +24,14 @@ function codificador(palavra){
     return novapalavra.join("");
   }
   function validaCampos(inputText){
+
     var minusculo = inputText.toLowerCase(); 
     var textoConvertido = minusculo.replace(/[^a-z]/g, '');
     return textoConvertido;
 };
+function copy(){
+  var textoCpiado = document.querySelector("#msg");
+  textoCpiado.select();
+  document.execCommand("copy");
+
+}

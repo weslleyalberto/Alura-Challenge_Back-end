@@ -20,18 +20,15 @@ Não permite acentuação
 */
 
 
-  var inputTexto = document.querySelector("#input-texto");
-
-
- 
- 
-
-
-
-
+var inputTexto = document.querySelector("#input-texto");
 var botaoEncriptar = document.querySelector("#btn-cripto");
+var botaoCopiar = document.querySelector("#btn-copy");
+document.querySelector("#btn-copy").addEventListener("click",copy);
 botaoEncriptar.addEventListener("click",function(event){
   event.preventDefault();
+
+  var textoTitulo = document.querySelector("#msg-titulo");
+  textoTitulo.textContent = "Mensagem criptografada:";
   
   var mensagemCripgrafada = document.querySelector("#msg");
   var result = validaCampos(inputTexto.value);
@@ -42,6 +39,13 @@ botaoEncriptar.addEventListener("click",function(event){
 function limparCampos(){
   inputTexto.innerHTML = "";
 }
+var botaoDescricptar = document.querySelector("#btn-descripto");
+botaoDescricptar.addEventListener("click", function(event){
+    event.preventDefault();
+    var textoTitulo = document.querySelector("#msg-titulo");
+    textoTitulo.textContent = "Mensagem Descriptografada:";
+});
+
 
 
 
