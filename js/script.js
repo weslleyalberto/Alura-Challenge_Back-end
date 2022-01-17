@@ -19,25 +19,30 @@ Apenas letras minúsculas
 Não permite acentuação     
 */
 
-  var teste = document.querySelector("#input-texto");
+
   var inputTexto = document.querySelector("#input-texto");
 
 
  
  
 
-var t = decodificador("pairaibenterns poberr enterncairair enterssenter dentersaifimesober enter tenterr fimesnailimeszaidober enterlenter coberm sufatcenterssober!");
-console.log(t);
- var retornos = codificador("gato");
-console.log(retornos);
+
+
 
 var botaoEncriptar = document.querySelector("#btn-cripto");
 botaoEncriptar.addEventListener("click",function(event){
   event.preventDefault();
   
+  var mensagemCripgrafada = document.querySelector("#msg");
+  var result = validaCampos(inputTexto.value);
+  mensagemCripgrafada.value = codificador(result);
   
 });
 
+function limparCampos(){
+  inputTexto.innerHTML = "";
+}
 
-console.log(validaCampos("564654aasdBBáCCCdd!#$%¨&*()_)"));
+
+
     
