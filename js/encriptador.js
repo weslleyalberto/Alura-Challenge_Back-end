@@ -25,6 +25,6 @@ function codificador(palavra){
   }
   function validaCampos(inputText){
     var minusculo = inputText.toLowerCase(); 
-    var textoConvertido = minusculo.replace(/[^a-zA-Z]/g, '');
+    var textoConvertido = minusculo.replace(/[^a-z]/g, '');
     return textoConvertido;
 };
