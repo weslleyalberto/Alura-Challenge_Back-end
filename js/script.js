@@ -45,7 +45,9 @@ botaoDescricptar.addEventListener("click", function(event){
     var textoTitulo = document.querySelector("#msg-titulo");
     textoTitulo.textContent = "Mensagem Descriptografada:";
 });
-
+var data = new Date();
+var footdata = document.querySelector("#footer-data");
+footdata.textContent = "@" + data.getFullYear()+" " +"- Desenvolvido por Weslley P. Alberto";
 
 
 

@@ -4,37 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Código Secreto</title>
+  <title>Cripto Text</title>
+ 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Cripto Text</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+     
+  </nav>
   <h1 class="titulo">código secreto</h1>
 
   <main class="main">
-    <section class="form box">
+    <section class="form box" class="container container-fluid ">
       <form action="" id="form-crypto">
         <label for="input-texto" id="label-text">Apenas letras minúsculas, sem acento</label>
-       
+       <div class="container container-fluid" id="container-center">
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-        <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
-        <input class="btn" type="submit" value="descriptografar!" id="btn-descripto">
+        <input class="btn btn-primary" type="submit" value="Criptografar" id="btn-cripto">
+        <input class="btn btn-danger" type="submit" value="Descriptografar" id="btn-descripto">
+      </div>
       </form>
     </section>
   
     <section class="msg box">
       <h2 id="msg-titulo">Mensagem criptografada:</h2>
+      <div class="container container-fluid" id="container-center">
       <input class="text-input" type="text" id="msg"></input>
-      <input class="btn" type="submit" value="copiar" id="btn-copy">
+      <input class="btn btn-primary" type="submit" value="Copiar" id="btn-copy">
+    </div>
     </section>
   </main>
   
  
  <footer id="footer">
-  <p>Desenvolvido por Weslley P. Alberto</p>
-  <a href="mailto:weslleyalberto@gmail.com">weslleyalberto@gmail.com</a>
+  <p id="footer-data"> Desenvolvido por Weslley P. Alberto </p>
+  <form>
+
+    <a href="mailto:weslleyalberto@gmail.com">weslleyalberto@gmail.com</a>
+  </form>
+  
  </footer>
  <script src="js/encriptador.js"></script>
  <script src="js/decodificador.js"></script>
  <script src="js/script.js"></script>
+
+ 
 </body>
 </html>

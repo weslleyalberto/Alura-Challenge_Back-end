@@ -4,10 +4,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family:  'Montserrat', sans-serif!important;
+  align-items: center!important;
+  
 }
 
 body {
   background-color: lightgray;
+  background-image: linear-gradient(to right, rgba(0, 89, 255, 0.322) , rgba(162, 0, 255, 0.726));
   
 }
 
@@ -16,12 +19,15 @@ body {
   margin: auto;
   display: flex;
   justify-content: center;
+  background-color: transparent;
+  
 }
 
 .titulo {
   padding: 15px;
   width: 30vw;
   margin: auto;
+  color: white;
 
 }
 
@@ -57,6 +63,13 @@ body {
   text-align: center;
   text-decoration: solid;
   margin-top: 40px;
+  color: white;
+  font-weight: 600;
+  font-style: normal;
+}
+#footer a{
+  color: black;
+  font-style: unset;
 }
 #input-texto{
   margin-bottom: 10px;
@@ -68,8 +81,20 @@ body {
 }
 #msg-titulo{
   font-size: 17px;
+  
 }
 #msg{
   margin-top: 15px;
   margin-bottom: 10px;
+}
+.titulo{
+  text-align: center;
+}
+.btn-cripto{
+  align-content: center;
+}
+#container-center{
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
