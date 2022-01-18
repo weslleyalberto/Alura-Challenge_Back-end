@@ -7,6 +7,9 @@
   align-items: center!important;
   
 }
+a{
+  text-decoration: none;
+}
 input{
  
   color: white;
@@ -165,9 +168,7 @@ h1{
 #title-text{
   font-size: 30px;
 }
-#result{
- 
-}
+
 #btn-copy{
   background-color: #161623!important;
 }
