@@ -7,21 +7,54 @@
   <title>Cripto Text</title>
  
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Cripto Text</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-     
-  </nav>
-  <h1 class="titulo">código secreto</h1>
 
-  <main class="main">
+  
+  <section>
+   
+      
+   
+    <div class="box">
+      <h1 id="title-text">Dencriptador</h1>
+      <div class="container-img">
+        <img src="images/ic-seguranca-cidadania-criptografia-2.png" class="img-logo">
+      </div>
+      
+      <form action="" id="form-crypto">
+        
+       <div class="container container-fluid" id="container-center">
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
+        <label for="input-texto" id="label-text">Apenas letras minúsculas e sem acento</label>
+        <br>
+       
+        <input class="btn btn-primary" type="submit" value="Criptografar" id="btn-cripto">
+        <input class="btn btn-danger" type="submit" value="Descriptografar" id="btn-descripto">
+      
+      </div>
+      </form>
+      <row id="result">
+      <div class="msg">
+        <h2 id="msg-titulo">Mensagem criptografada</h2>
+        <div class="container container-fluid" id="container-center">
+        <input class="text-input" type="text" id="msg"></input>
+        <input class="btn btn-primary" type="submit" value="Copiar texto" id="btn-copy">
+      </div>
+    </row>
+    </div>
+    <footer id="footer">
+      <p id="footer-data"> Desenvolvido por Weslley P. Alberto </p>
+     
+        <button type="submit" value="weslleyalberto@gmail.com" class="btn btn-primary" href="mailto:weslleyalberto@gmail.com">
+        <a href="mailto:weslleyalberto@gmail.com" id="a-style">weslleyalberto@gmail.com</a>
+      </button>
+     </footer>
+    </div>
+    
+  </section>
+
+  <!--<main class="main">
     <section class="form box" class="container container-fluid ">
       <form action="" id="form-crypto">
         <label for="input-texto" id="label-text">Apenas letras minúsculas, sem acento</label>
@@ -42,15 +75,10 @@
     </section>
   </main>
   
- 
- <footer id="footer">
-  <p id="footer-data"> Desenvolvido por Weslley P. Alberto </p>
-  <form>
+-->
 
-    <a href="mailto:weslleyalberto@gmail.com">weslleyalberto@gmail.com</a>
-  </form>
-  
- </footer>
+
+<script src="js/maquina-escrever.js"></script>
  <script src="js/encriptador.js"></script>
  <script src="js/decodificador.js"></script>
  <script src="js/script.js"></script>
