@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Código Secreto</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
   <main class="main">
     <section class="form box">
       <form action="" id="form-crypto">
-        <label for="input-texto">Apenas letras minúsculas, sem acento</label>
+        <label for="input-texto" id="label-text">Apenas letras minúsculas, sem acento</label>
        
         <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
         <input class="btn" type="submit" value="criptografar!" id="btn-cripto">
@@ -22,14 +22,19 @@
     </section>
   
     <section class="msg box">
-      <h2 id="">Mensagem criptografada:</h2>
+      <h2 id="msg-titulo">Mensagem criptografada:</h2>
       <input class="text-input" type="text" id="msg"></input>
       <input class="btn" type="submit" value="copiar" id="btn-copy">
     </section>
   </main>
-  <script src="js/encriptador.js"></script>
-  <script src="js/decodificador.js"></script>
-  <script src="js/script.js"></script>
+  
  
+ <footer id="footer">
+  <p>Desenvolvido por Weslley P. Alberto</p>
+  <a href="mailto:weslleyalberto@gmail.com">weslleyalberto@gmail.com</a>
+ </footer>
+ <script src="js/encriptador.js"></script>
+ <script src="js/decodificador.js"></script>
+ <script src="js/script.js"></script>
 </body>
 </html>
