@@ -1,9 +1,11 @@
 var msg = document.querySelector("#msg");
 var inputTexto = document.querySelector("#input-texto");
+
 function codificador(palavra){
-    var novapalavra = [];
+    var novapalavra = [] ;
+    
     for(var i =0; i < palavra.length;i++){
-       if(palavra[i] == "e"){
+     if(palavra[i] == "e"){
          novapalavra[i] = "enter";
        }
        else if (palavra[i] == "i"){
@@ -18,6 +20,7 @@ function codificador(palavra){
        else if(palavra[i] == "u"){
          novapalavra[i] = "ufat";
        }
+      
        else{
          novapalavra[i] = palavra[i];
        }
@@ -25,12 +28,12 @@ function codificador(palavra){
     }
     return novapalavra.join("");
   }
-  function validaCampos(inputText){
+  /*function validaCampos(inputText){
 
     var minusculo = inputText.toLowerCase(); 
     var textoConvertido = minusculo.replace(/[^a-z]/g, '');
     return textoConvertido;
-};
+};*/
 function copy(){
   var textoCpiado = document.querySelector("#msg");
   textoCpiado.select();

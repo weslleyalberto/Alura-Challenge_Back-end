@@ -31,8 +31,9 @@ botaoEncriptar.addEventListener("click",function(event){
   textoTitulo.textContent = "Mensagem criptografada";
   
   var mensagemCripgrafada = document.querySelector("#msg");
-  var result = validaCampos(inputTexto.value);
-  mensagemCripgrafada.value = codificador(result);
+  var result = inputTexto.value.toLowerCase();
+ var mensagemMinuscula = codificador(result);
+ msg.value = mensagemMinuscula.replace(/[^a-z ]/gi,'');
   limparCampoMensagem();
   
 });
@@ -54,6 +55,7 @@ var botaoLimpar = document.querySelector("#btn-limpar");
 
 botaoLimpar.addEventListener("click", function(){
   limparCampos();
+  
   
 });
 
