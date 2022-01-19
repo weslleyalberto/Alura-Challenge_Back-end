@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon"  type="image/jpg" href="images/ic-seguranca-cidadania-criptografia-2.png" >
+  
+     
+
   <title>Cripto Text</title>
  
   <link rel="stylesheet" href="css/style.css">
@@ -25,7 +29,7 @@
       <form action="" id="form-crypto">
         
        <div class="container container-fluid" id="container-center">
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
+        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira aqui seu texto">
         <label for="input-texto" id="label-text">Apenas letras minúsculas e sem acento</label>
         <br>
        
@@ -35,17 +39,19 @@
       </div>
       </form>
       <row id="result">
-      <div class="msg">
+      <div class="box">
         <h2 id="msg-titulo">Mensagem criptografada</h2>
         <div class="container container-fluid" id="container-center">
-        <input class="text-input" type="text" id="msg">
+        <input class="text-input" type="text" id="msg" >
+          
+        <input class="btn btn-primary" type="submit" value="Copiar Texto" id="btn-copy">
+        <input class="btn btn-primary" type="submit" value="Limpar Campos" id="btn-limpar">
         
-        <input class="btn btn-primary" type="submit" value="Copiar texto" id="btn-copy">
       </div>
     </row>
     </div>
     <footer id="footer">
-      <p id="footer-data"> Desenvolvido por Weslley P. Alberto </p>
+      <p id="footer-data"> </p>
      
         <button type="submit" value="weslleyalberto@gmail.com" class="btn btn-primary" href="mailto:weslleyalberto@gmail.com">
         <a href="mailto:weslleyalberto@gmail.com" id="a-style">weslleyalberto@gmail.com</a>
@@ -55,28 +61,7 @@
     
   </section>
 
-  <!--<main class="main">
-    <section class="form box" class="container container-fluid ">
-      <form action="" id="form-crypto">
-        <label for="input-texto" id="label-text">Apenas letras minúsculas, sem acento</label>
-       <div class="container container-fluid" id="container-center">
-        <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="insira o texto aqui">
-        <input class="btn btn-primary" type="submit" value="Criptografar" id="btn-cripto">
-        <input class="btn btn-danger" type="submit" value="Descriptografar" id="btn-descripto">
-      </div>
-      </form>
-    </section>
-  
-    <section class="msg box">
-      <h2 id="msg-titulo">Mensagem criptografada:</h2>
-      <div class="container container-fluid" id="container-center">
-      <input class="text-input" type="text" id="msg"></input>
-      <input class="btn btn-primary" type="submit" value="Copiar" id="btn-copy">
-    </div>
-    </section>
-  </main>
-  
--->
+ 
 
 
 <script src="js/maquina-escrever.js"></script>

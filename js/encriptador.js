@@ -1,3 +1,5 @@
+var msg = document.querySelector("#msg");
+var inputTexto = document.querySelector("#input-texto");
 function codificador(palavra){
     var novapalavra = [];
     for(var i =0; i < palavra.length;i++){
@@ -34,5 +36,12 @@ function copy(){
   textoCpiado.select();
   document.execCommand("copy");
 
+}function limparCampos(){
+  msg.value = "";
+  inputTexto.value = "";
 }
+function limparCampoMensagem(){
+  inputTexto.value = "";
+}
+
 
