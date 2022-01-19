@@ -28,7 +28,7 @@ botaoEncriptar.addEventListener("click",function(event){
   event.preventDefault();
 
   var textoTitulo = document.querySelector("#msg-titulo");
-  textoTitulo.textContent = "Mensagem criptografada:";
+  textoTitulo.textContent = "Mensagem criptografada";
   
   var mensagemCripgrafada = document.querySelector("#msg");
   var result = validaCampos(inputTexto.value);
@@ -43,12 +43,13 @@ var botaoDescricptar = document.querySelector("#btn-descripto");
 botaoDescricptar.addEventListener("click", function(event){
     event.preventDefault();
     var textoTitulo = document.querySelector("#msg-titulo");
-    textoTitulo.textContent = "Mensagem Descriptografada:";
+    textoTitulo.textContent = "Mensagem Descriptografada";
+    
 });
-var data = new Date();
+/*var data = new Date();
 var footdata = document.querySelector("#footer-data");
 footdata.textContent = "@" + data.getFullYear()+" " +"- Desenvolvido por Weslley P. Alberto";
-
+*/
 
 
     
