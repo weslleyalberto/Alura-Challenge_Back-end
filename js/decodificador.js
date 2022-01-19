@@ -18,7 +18,8 @@ botaoDescricptar.addEventListener("click", function(event){
     event.preventDefault();
     var textoTitulo = document.querySelector("#msg-titulo");
     textoTitulo.textContent = "Mensagem Descriptografada";
-    var msg = document.querySelector("#msg");
+    
     msg.value = decodificador(inputTexto.value);
+   
     
 });

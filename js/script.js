@@ -20,7 +20,7 @@ Não permite acentuação
 */
 
 
-var inputTexto = document.querySelector("#input-texto");
+
 var botaoEncriptar = document.querySelector("#btn-cripto");
 var botaoCopiar = document.querySelector("#btn-copy");
 document.querySelector("#btn-copy").addEventListener("click",copy);
@@ -33,23 +33,28 @@ botaoEncriptar.addEventListener("click",function(event){
   var mensagemCripgrafada = document.querySelector("#msg");
   var result = validaCampos(inputTexto.value);
   mensagemCripgrafada.value = codificador(result);
+  limparCampoMensagem();
   
 });
 
-function limparCampos(){
-  inputTexto.innerHTML = "";
-}
+
 var botaoDescricptar = document.querySelector("#btn-descripto");
 botaoDescricptar.addEventListener("click", function(event){
     event.preventDefault();
     var textoTitulo = document.querySelector("#msg-titulo");
     textoTitulo.textContent = "Mensagem Descriptografada";
+    limparCampoMensagem();
     
 });
-/*var data = new Date();
+var data = new Date();
 var footdata = document.querySelector("#footer-data");
 footdata.textContent = "@" + data.getFullYear()+" " +"- Desenvolvido por Weslley P. Alberto";
-*/
 
+var botaoLimpar = document.querySelector("#btn-limpar");
+
+botaoLimpar.addEventListener("click", function(){
+  limparCampos();
+  
+});
 
     
