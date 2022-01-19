@@ -41,7 +41,13 @@ body{
   color: white;
 
 }
-
+.box{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .box-default {
   padding: 10px;
   margin: 0 10px 0 10px;
@@ -107,16 +113,19 @@ body{
   font-size: 14px;
   font-weight: 400;
   color: white;
+
   
 }
 .btn{
   border-radius: 10px!important;
 }
-#msg{
+.msg{
   margin-top: 15px;
   margin-bottom: 10px;
-  justify-content:center ;
+  
   flex-direction: row;
+ 
+  justify-content: center;
 }
 .titulo{
   text-align: center;
@@ -124,7 +133,7 @@ body{
 .btn-cripto{
   align-content: center;
   margin-right: 10px;
-  background-color: #ffc1076c!important;
+  background-color: #e482036c!important;
 }
 #container-center{
   align-items: center;
@@ -167,6 +176,4 @@ h1{
   font-size: 30px;
 }
 
-#btn-copy{
-  background-color: #ffc1074b;
-}
+
