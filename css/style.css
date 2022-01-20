@@ -175,5 +175,8 @@ h1{
 #title-text{
   font-size: 30px;
 }
-
+#btn-git{
+  background-color: transparent; 
+  border-radius: 17px;
+}
 

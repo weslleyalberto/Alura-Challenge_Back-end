@@ -20,6 +20,5 @@ botaoDescricptar.addEventListener("click", function(event){
     textoTitulo.textContent = "Mensagem Descriptografada";
     
     msg.value = decodificador(inputTexto.value);
-   
-    
+     
 });
