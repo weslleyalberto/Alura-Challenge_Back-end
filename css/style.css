@@ -57,8 +57,8 @@ body{
   width: 30vw;
   height: auto;
   position: relative;
-  width: 500px;
-  min-height: 500px;
+  width: 600px;
+  min-height: 600px;
   background: rgba(255,255,255,0.1); 
   border: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
@@ -173,10 +173,56 @@ h1{
   
 }
 #title-text{
-  font-size: 30px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 #btn-git{
   background-color: transparent; 
   border-radius: 17px;
 }
+textarea{
+  background-color: transparent;
+  max-width: 500px;
+  max-height: 200px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+textarea::placeholder{
+  color: white;
+  text-align: center;
+}
+#btn-amarelo{
+  background-color: rgba(241, 210, 28, 0.808);
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  padding-right: 3px;
+  margin-right: 0px;
+  border-radius: 17px;
+}
+.container-icons{
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  padding-right: 500px;
+}
+#btn-vermelho{
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 17px;
+  margin-left: 5px;
+  margin-right: 3px;
+  
+ 
 
+}
+#btn-cinza{
+  background-color: rgb(197, 197, 197);
+  width: 20px;
+  height: 20px;
+  border-radius: 17px;
+ 
+ 
+}
