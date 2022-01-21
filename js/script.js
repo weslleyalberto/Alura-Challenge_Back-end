@@ -47,9 +47,8 @@ botaoDescricptar.addEventListener("click", function(event){
     limparCampoMensagem();
     
 });
-var data = new Date();
-var footdata = document.querySelector("#footer-data");
-footdata.textContent = "@" + data.getFullYear()+" " +"- Desenvolvido por Weslley P. Alberto";
+
+
 
 var botaoLimpar = document.querySelector("#btn-limpar");
 

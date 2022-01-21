@@ -179,6 +179,7 @@ h1{
 #btn-git{
   background-color: transparent; 
   border-radius: 17px;
+
 }
 textarea{
   background-color: transparent;
@@ -225,4 +226,8 @@ textarea::placeholder{
   border-radius: 17px;
  
  
+}
+#footer-data{
+  font-size: 15px;
+  font-weight: 400;
 }
