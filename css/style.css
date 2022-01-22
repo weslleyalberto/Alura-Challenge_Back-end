@@ -234,3 +234,7 @@ textarea::placeholder{
   font-size: 15px;
   font-weight: 400;
 }
+.img-logo{
+  margin-top: 10px;
+  width: 130px;
+}
