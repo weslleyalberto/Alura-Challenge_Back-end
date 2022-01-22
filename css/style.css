@@ -202,11 +202,14 @@ textarea::placeholder{
   margin-right: 0px;
   border-radius: 17px;
 }
-.container-icons{
+.container-buttons{
   flex-direction: row;
   position: relative;
   align-items: flex-start;
   padding-right: 500px;
+  background-color: transparent;
+  height: 50px;
+  border-radius: 17px;
 }
 #btn-vermelho{
   background-color: red;
@@ -230,4 +233,8 @@ textarea::placeholder{
 #footer-data{
   font-size: 15px;
   font-weight: 400;
+}
+.img-logo{
+  margin-top: 10px;
+  width: 130px;
 }

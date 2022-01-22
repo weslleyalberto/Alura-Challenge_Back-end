@@ -38,6 +38,8 @@ function copy(){
   var textoCpiado = document.querySelector("#msg");
   textoCpiado.select();
   document.execCommand("copy");
+ 
+  alert("Texto Copiado!");
 
 }function limparCampos(){
   msg.value = "";
