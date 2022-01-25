@@ -41,6 +41,7 @@ body{
   color: white;
 
 }
+/* Box da mensagem Cripto ou Descripto*/
 .box{
   position: relative;
   display: flex;
@@ -48,6 +49,7 @@ body{
   justify-content: center;
   align-items: center;
 }
+/* Box transparente */
 .box-default {
   padding: 10px;
   margin: 0 10px 0 10px;
@@ -148,6 +150,7 @@ section{
   display: flex;
   justify-content:center ;
 }
+/*Desenha imagem de fundo*/
 section::before{
   content: '';
   position: absolute;
