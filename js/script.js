@@ -30,7 +30,7 @@ botaoEncriptar.addEventListener("click",function(event){
   var textoTitulo = document.querySelector("#msg-titulo");
   textoTitulo.textContent = "Mensagem criptografada";
   
-  var mensagemCripgrafada = document.querySelector("#msg");
+  
   var result = inputTexto.value.toLowerCase();
  var mensagemMinuscula = codificador(result);
  msg.value = mensagemMinuscula.replace(/[^a-z ]/gi,'');
