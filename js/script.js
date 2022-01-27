@@ -57,7 +57,7 @@ botaoLimpar.addEventListener("click", function(){
   
   
 });
-function myFunction() {
+function popup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
 }
