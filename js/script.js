@@ -111,6 +111,7 @@ function popup() {
   popup.classList.toggle("show");
   setTimeout(function() {
    popup.classList.toggle("hiden");
-  }, 1500); // 3000 = 3 segundos
+  }, 2000); // 3000 = 3 segundos
 }
-    
+
+
