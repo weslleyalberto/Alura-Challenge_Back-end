@@ -109,5 +109,8 @@ botaoLimpar.addEventListener("click", function(){
 function popup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+  setTimeout(function() {
+   popup.classList.toggle("hiden");
+  }, 1500); // 3000 = 3 segundos
 }
     

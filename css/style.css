@@ -271,8 +271,13 @@ textarea::placeholder{
 }
 .popup .show {
   visibility: visible;
-  -webkit-animation: fadeIn 2s;
-  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  
+}
+.popup .hiden{
+  
+  display: none;
 }
 @-webkit-keyframes fadeIn {
   from {opacity: 0;} 
