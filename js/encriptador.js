@@ -36,9 +36,10 @@ function codificador(texto){
 function copy(){
   var textoCpiado = document.querySelector("#msg");
   textoCpiado.select();
-  document.execCommand("copy");
  
-  alert("Texto Copiado!");
+  navigator.clipboard.writeText(textoCpiado.value);
+ 
+ 
 
 }function limparCampos(){
   msg.value = "";
