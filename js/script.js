@@ -64,7 +64,7 @@ function decodificador(palavra){
 var botaoDescricptar = document.querySelector("#btn-descripto");
 botaoDescricptar.addEventListener("click", function(event){
   event.preventDefault();
-  var textoTitulo = document.querySelector("#msg-titulo");
+  const textoTitulo = document.querySelector("#msg-titulo");
   textoTitulo.textContent = "Mensagem Descriptografada";
   
   msg.value = decodificador(inputTexto.value);
@@ -98,7 +98,7 @@ botaoEncriptar.addEventListener("click",function(event){
 var botaoDescricptar = document.querySelector("#btn-descripto");
 botaoDescricptar.addEventListener("click", function(event){
     event.preventDefault();
-    var textoTitulo = document.querySelector("#msg-titulo");
+    const textoTitulo = document.querySelector("#msg-titulo");
     textoTitulo.textContent = "Mensagem Descriptografada";
     limparCampoMensagem();   
 });
@@ -109,5 +109,8 @@ botaoLimpar.addEventListener("click", function(){
 function popup() {
   var popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
+  setTimeout(function() {
+   popup.classList.toggle("hiden");
+  }, 1500); // 3000 = 3 segundos
 }
     
