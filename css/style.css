@@ -149,8 +149,8 @@ section{
 section::before{
   content: '';
   position: absolute;
-  width: 20em;
-  height: 20em;
+  width: 17em;
+  height: 17em;
   background: linear-gradient(#ffc107,#e91e63);
   border-radius: 50%;
   transform: translate(-250px,-120px);
