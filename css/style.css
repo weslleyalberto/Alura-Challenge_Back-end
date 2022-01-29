@@ -289,11 +289,13 @@ textarea::placeholder{
   to {opacity:1 ;}
 }
 .error{
-  color: #e91e63;
+  color: #d5e91e;
+  font-size: 0.8rem;
 }
 .error-invisivel{
   display: none;
 }
+
 
 
 

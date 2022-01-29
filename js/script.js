@@ -98,14 +98,14 @@ botaoEncriptar.addEventListener("click",function(event){
     error.className = "error";
     setTimeout(function() {
       error.className = "error-invisivel";
-     }, 2000);  
+     }, 3000);  
   }
   else if(result.match(/[^a-z ]/g)){
     error.textContent = "Não são permitidos caracteres especiais, números ou letras maíusculas!";
     error.className = "error";
     setTimeout(function(){
       error.className = "error-invisivel";
-    },2000);
+    },3000);
     
     return;
   }
