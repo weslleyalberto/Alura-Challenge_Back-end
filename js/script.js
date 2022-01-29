@@ -73,7 +73,7 @@ botaoDescricptar.addEventListener("click", function(event){
 function copy(){
   var textoCpiado = document.querySelector("#msg");
   textoCpiado.select();
- 
+  
   navigator.clipboard.writeText(textoCpiado.value); 
 }
 function limparCampos(){
@@ -90,18 +90,33 @@ botaoEncriptar.addEventListener("click",function(event){
   event.preventDefault();
 
   var textoTitulo = document.querySelector("#msg-titulo");
-  textoTitulo.textContent = "Mensagem criptografada";    
-  var result = inputTexto.value.toLowerCase();
+  ;    
+  var result = inputTexto.value;
   var error = document.querySelector("span");
   if(result.length == 0){
+    
     error.className = "error";
+    setTimeout(function() {
+      error.className = "error-invisivel";
+     }, 2000);  
+  }
+  else if(result.match(/[^a-z ]/g)){
+    error.textContent = "Não são permitidos caracteres especiais, números ou letras maíusculas!";
+    error.className = "error";
+    setTimeout(function(){
+      error.className = "error-invisivel";
+    },2000);
+    
+    return;
   }
   else{
+    textoTitulo.textContent = "Mensagem criptografada"
     error.className = "error-invisivel";
-  }
- var mensagemMinuscula = codificador(result);
- msg.value = mensagemMinuscula.replace(/[^a-z ]/gi,'');
+    var mensagemMinuscula = codificador(result);
+    msg.value = mensagemMinuscula.replace(/[^a-z ]/gi,'');
   limparCampoMensagem();  
+  }
+ 
 });
 var botaoDescricptar = document.querySelector("#btn-descripto");
 botaoDescricptar.addEventListener("click", function(event){
@@ -121,5 +136,4 @@ function popup() {
    popup.classList.toggle("hiden");
   }, 2000); // 3000 = 3 segundos
 }
-
 
