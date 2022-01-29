@@ -88,9 +88,17 @@ var botaoCopiar = document.querySelector("#btn-copy");
 document.querySelector("#btn-copy").addEventListener("click",copy);
 botaoEncriptar.addEventListener("click",function(event){
   event.preventDefault();
+
   var textoTitulo = document.querySelector("#msg-titulo");
   textoTitulo.textContent = "Mensagem criptografada";    
   var result = inputTexto.value.toLowerCase();
+  var error = document.querySelector("span");
+  if(result.length == 0){
+    error.className = "error";
+  }
+  else{
+    error.className = "error-invisivel";
+  }
  var mensagemMinuscula = codificador(result);
  msg.value = mensagemMinuscula.replace(/[^a-z ]/gi,'');
   limparCampoMensagem();  
